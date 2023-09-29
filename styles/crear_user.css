@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    min-height: 100vh; 
+    background: url(../assets/img_fondos/register.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+.cont_general {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0,0,0, .2);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.cont_form h1 {
+  text-align: center;
+font-size: 30px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 25px;
+  font-size: 16px;
+  color: #71bac2;
+  margin: 5px 5px;
+  padding: 20px 40px 20px 20px;
+  cursor: pointer;
+
+  }
+  button {
+  width: 100%;
+  height: 100%;
+  background-color: #679797;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.979);
+  border-radius: 25px;
+  font-size: 16px;
+  color: #eaebeb;
+  margin: 5px 5px;
+  padding: 20px 40px 20px 20px;
+  cursor: pointer;
+  }
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-size-adjust: 14.5px;
+    cursor: pointer;
+  }
+
+
+select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: transparent;
+    color: #909494;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 4px;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+
+  .selec_preg_secret {
+    width: 100%;
+    height: 100%;
+    font-family: cursive, sans-serif;
+    font-size: 15;
+    outline: 0;
+    background: transparent;
+    color: #919191;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin: 10px 10px;
+    padding: 20px 40px 20px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+  }

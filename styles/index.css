@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../assets/img_fondos/login.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cont_general {
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 20%;
+    padding: 1.8rem 0.85rem;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: aliceblue;
+    border-radius: 10px;
+    
+}
+
+.side_bar {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 25%;
+    padding: 10px;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: aliceblue;
+    border-radius: 10px;
+    
+}
+#side_bar_server {
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    visibility: visible;
+    flex-direction: column;
+    padding: 25px;
+    height: 100vh;
+    width: 25%;
+    left: 0;
+    overflow-x: visible;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: aliceblue;
+    border-radius: 10px;
+}
+#side_bar_canales {
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    visibility: visible;
+    min-height: 100vh;
+    width: 25%;
+    left: 0;
+    overflow-x: visible;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+
+.side_bar #btn {
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 45%;
+}
+
+.side_bar #btn2 {
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 20px;
+    border-radius: 45%;
+}
+
+#side_bar_server #btn_canales {
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 45%;
+}
+
+.btn .text_hover {
+    position: absolute;
+    align-items: center;
+    height: 15%;
+    width: 25%;
+    transform: translateX(-50%);
+    color: #e02828;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.btn .text_hover::before{
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #fff #ffff #ffff #ffff;
+
+}
+
+.btn:hover .text_hover {
+    top: -80%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn2 .text_hover2 {
+    position: absolute;
+    align-items: center;
+    height: 15%;
+    width: 25%;
+    transform: translateX(-50%);
+    color: #e02828;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.btn2 .text_hover2::before{
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #fff #ffff #ffff #ffff;
+
+}
+
+.btn2:hover .text_hover2 {
+    top: -80%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.side_bar .user {
+    position: fixed;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: darkcyan;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.user input {
+    width: 15%;
+    height: 50%;
+    float: left;
+    bottom: 0;
+    font-size: 15px;
+    border-radius: 45%;
+}
+
+.user .nombre_user {
+    width: 20%;
+    height: 50%;
+    padding-top: 20%;
+    text-align: center;
+    float: left;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    text-align: left;
+}

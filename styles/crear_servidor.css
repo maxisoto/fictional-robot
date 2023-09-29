@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../assets/img_fondos/login.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor_general{
+    width: 420px;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.contenedor_general h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+input {
+    width: 87%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+    margin: 10px;
+
+}
+
+button {
+    width: 40%;
+    height: 30%;
+    background-color: darkslategray;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    margin: 10px;
+}
