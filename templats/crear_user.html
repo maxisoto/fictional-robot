@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/crear_user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Crear Usuario</title>
+</head>
+<body>
+    <div class="cont_general">
+        <div class="cont_form">
+            <h1>Crear Cuenta</h1>
+            <form id="CrearUsuario">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="user" name="user" placeholder="Nombre usuario" required>
+                <input type="text" id="password" name="password" placeholder="Contraseña" required>
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="f_nac" name="f_nac">
+                <label for="fecha_nacimiento">Seleccione una Pregunta Secreta</label>
+                <select id="preg_secret">
+                    <option value="Nombre de mi primera mascota">Nombre de mi primera mascota</option>
+                    <option value="Pelicula Favorita">Pelicula Favorita</option>
+                    <option value="Mi Club de futbol de la infancia">Mi Club de futbol de la infancia</option>
+                    <option value="Color Favorito">Color Favorito</option>
+                </select>
+                <!-- <input type="text" id="preg_secret" name="preg_secret" placeholder="Pregunta Secreta" required> -->
+                <label for="fecha_nacimiento">Respuesta</label>
+                <input type="text" id="respuesta" name="respuesta" placeholder="Respuesta Secreta" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="../scripts/crear_user.js"></script>
+</body>
+</html>
