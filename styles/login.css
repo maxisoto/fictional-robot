@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(../assets/img_fondos/fondo.jpg);
+    background: url(../assets/img_fondo/login.png);
     background-size: cover;
     background-position: center;
 }
